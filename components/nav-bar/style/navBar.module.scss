@@ -1,0 +1,21 @@
+.menuContainer {
+  direction: rtl;
+  height: 100px;
+  @apply w-full flex justify-between items-center;
+
+  .sections {
+    border-bottom: 1px solid gray;
+    @apply w-1/3 flex justify-center items-center h-full p-5;
+    .menuContainer {
+      @apply flex justify-start items-center;
+    }
+
+    button {
+      @apply w-auto whitespace-nowrap;
+    }
+  }
+
+  .midSection {
+  @apply text-4xl;
+  }
+}
