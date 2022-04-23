@@ -4,7 +4,7 @@ import style from "./style/navBar.module.scss"
 export default function Navbar({children}) {
     const menu = [
         {
-            path: "/",
+            path: "/product",
             name: "محصولات"
         },
         {
@@ -21,7 +21,7 @@ export default function Navbar({children}) {
         </li>
     );
     return (
-        <div className={style.menuContainer}>
+        <div className={style.navContainer}>
 
             <div className={style.sections}>
                 <div className={style.logo}>LOGO</div>

@@ -1,7 +1,11 @@
+import dynamic from 'next/dynamic'
+const DynamicComponent = dynamic(() => import('../components/slider/slider'))
 
 function Home() {
     return (
-        <div></div>
+        <div>
+            <DynamicComponent/>
+        </div>
     )
 }
 
