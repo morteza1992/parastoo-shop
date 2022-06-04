@@ -1,7 +1,7 @@
 .navContainer {
   direction: rtl;
   height: 70px;
-  @apply w-full flex justify-between items-center;
+  @apply w-full hidden sm:flex justify-between items-center;
 
   .sections {
     border-bottom: 1px solid gray;

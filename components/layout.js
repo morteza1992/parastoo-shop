@@ -1,11 +1,16 @@
 import Navbar from './nav-bar/navBar'
-// import Footer from './footer'
+import MobileNavBar from './mobile-nav-bar/mobileNavBar'
+import SideFilter from './side-filter/side-filter'
 
-export default function Layout({ children }) {
+export default function Layout({children}) {
     return (
-        <>
+        <div className='pageContainer'>
             <Navbar />
-            <main>{children}</main>
-        </>
+            <MobileNavBar />
+            <div className='allContent'>
+                <SideFilter className='sideFilter' />
+                <main className='contentContainer'>{children}</main>
+            </div>
+        </div>
     )
 }

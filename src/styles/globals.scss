@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Vazir';
+  direction: rtl;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pageContainer {
+  @apply flex justify-between items-start flex-wrap;
+  .allContent {
+    @apply flex justify-center items-start flex-nowrap;
+    .contentContainer {
+      @apply w-9/12 lg:w-10/12 p-4 pr-0;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.mobileNavContainer {
+  @apply flex justify-between border-b w-full sm:hidden text-xs p-3;
+  .section {
+    @apply flex justify-between items-center w-1/3;
+    &:nth-child(2) {
+      @apply justify-center;
+    }
+
+    .menuIconContainer {
+      @apply flex items-center justify-center h-full cursor-pointer;
+      width: 20px;
+
+      .mobileMenuIcon {
+        width: 20px;
+        height: 2px;
+        @apply bg-gray-800 relative;
+        &:before {
+          content: '';
+          height: 2px;
+          transition: 0.5s;
+          @apply bg-gray-800 w-full absolute -bottom-2;
+        }
+
+        &:after {
+          content: '';
+          height: 2px;
+          transition: 0.5s;
+          @apply bg-gray-800 w-full absolute bottom-2;
+        }
+      }
+
+      .selectedMenu {
+        visibility: hidden;
+        &:after{
+          visibility: visible;
+          @apply bottom-0 -rotate-45;
+        }
+        &:before {
+          visibility: visible;
+          @apply bottom-0 rotate-45;
+        }
+      }
+    }
+
+  }
+}

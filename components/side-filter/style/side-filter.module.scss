@@ -1,0 +1,14 @@
+
+.filterContainer {
+  min-height: 400px;
+  @apply rounded-lg border text-xs m-4 w-3/12 lg:w-2/12 hidden sm:block;
+  .title {
+    @apply text-center p-3 font-bold text-gray-500 border-b;
+  }
+  .filterRowContainer{
+    @apply flex justify-start items-center p-3;
+    input{
+      @apply ml-2;
+    }
+  }
+}
